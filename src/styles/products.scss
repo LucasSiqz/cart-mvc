@@ -1,0 +1,56 @@
+.products {
+  max-width: 1200px;
+  width: 100%;
+  margin: 16px auto;
+  padding: 0 16px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background: #F5F5F5;
+    border-radius: 4px;
+    padding: 20px;
+
+    &-img{
+      align-self: center;
+      max-width: 250px;
+    }
+
+    &-title {
+      font-size: 16px;
+      line-height: 20px;
+      color: #333;
+      margin-top: 5px;
+
+    }
+
+    &-price {
+      font-size: 21px;
+      font-weight: bold;
+      margin: 5px 0 20px;
+    }
+
+    &-btn {
+      background: #436461;
+      color: #fff;
+      border: 0;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: auto;
+      padding: 12px;
+      margin-bottom: 8px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.95;
+      }
+    }
+  }
+}

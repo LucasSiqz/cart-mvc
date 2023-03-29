@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>CartJS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/global.scss" />
+    <link rel="stylesheet" href="./src/styles/header.scss" />
+    <link rel="stylesheet" href="./src/styles/products.scss" />
+  </head>
+
+  <body id="app">
+    <main class="app">
+      <header class="header">
+        <h1 class="header__title">CartJS</h1>
+        <div class="header__cart">
+          <strong class="header__cart-title">Meu carrinho</strong>
+          <span class="header__cart-quantity" id="cart-quantity">quantidade: 0</span>
+        </div>
+      </header>
+
+      <section class="products">
+        <ul class="products__list" id="products-list"></ul>
+      </section>
+    </main>
+    <script type="module" src="./src/index.js"> </script>
+  </body>
+</html>
