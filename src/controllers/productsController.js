@@ -12,7 +12,6 @@ export default class ProductsController {
 
   addProducts() {
     const products = this.#service.loadProducts()
-
     this.#view.addProducts(products, this.#storage.cartStore)
   }
 

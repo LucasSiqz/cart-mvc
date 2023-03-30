@@ -9,20 +9,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/styles/global.scss" />
-    <link rel="stylesheet" href="./src/styles/header.scss" />
     <link rel="stylesheet" href="./src/styles/products.scss" />
+    <script src="./src/components/Header.js"></script>
   </head>
 
   <body id="app">
     <main class="app">
-      <header class="header">
-        <h1 class="header__title">CartJS</h1>
-        <div class="header__cart">
-          <strong class="header__cart-title">Meu carrinho</strong>
-          <span class="header__cart-quantity" id="cart-quantity">quantidade: 0</span>
-        </div>
-      </header>
-
+      <header-component>
+        <span id="cart-quantity" slot="cart-quantity">quantidade: 0</span>
+      </header-component>
       <section class="products">
         <ul class="products__list" id="products-list"></ul>
       </section>
